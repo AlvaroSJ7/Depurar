@@ -8,8 +8,14 @@ public class Main {
         };
 
         System.out.println("Calculando el mejor estudiante...");
+
         Estudiante mejor = GestorEstudiantes.encontrarMejorEstudiante(estudiantes);
-        System.out.println("El mejor estudiante es: " + mejor.getNombre()); // Posible NullPointerException
+
+        if (mejor != null) {
+            System.out.println("El mejor estudiante es: " + mejor.getNombre());
+        } else {
+            System.out.println("No hay estudiantes");
+        }
 
         System.out.println("Guardando resultados...");
         GestorEstudiantes.guardarResultados(estudiantes, "resultados.txt");
