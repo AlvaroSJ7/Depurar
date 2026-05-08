@@ -4,7 +4,7 @@ public class Main {
                 new Estudiante("Ana", 20, new double[]{8.5, 9.0, 7.5}),
                 new Estudiante("Luis", 22, new double[]{6.0, 5.5}),
                 new Estudiante("Marta", 19, new double[]{9.5, 10.0}),
-                new Estudiante("Carlos", 21, new double[]{}) // Error: sin notas
+                new Estudiante("Carlos", 21, new double[]{})
         };
 
         System.out.println("Calculando el mejor estudiante...");

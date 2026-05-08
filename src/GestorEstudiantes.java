@@ -22,6 +22,7 @@ public class GestorEstudiantes {
         return suma / notas.length;
     }
 
+
     // Encuentra al estudiante con la mejor nota media
     public static Estudiante encontrarMejorEstudiante(Estudiante[] estudiantes) {
 
@@ -64,5 +65,7 @@ public class GestorEstudiantes {
         } catch (IOException e) {
             System.out.println("Error al guardar el fichero: " + e.getMessage());
         }
-    }
-}
+
+            }
+        }
+
